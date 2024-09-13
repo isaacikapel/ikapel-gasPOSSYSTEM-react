@@ -1,0 +1,93 @@
+.marquee-container {
+  /* overflow: hidden; */
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.marquee {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.gaspro {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.gasproA {
+  font-size: 20px;
+}
+
+/* .pods {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+} */
+
+/* .podsA {
+  width: 24%;
+  height: 45vh;
+} */
+
+.podsA img {
+  width: 100%;
+  height: 80%;
+}
+
+
+#hero {
+  width: 100%;
+  height: 35vh;
+  color: white;
+  position: relative;
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* background: rgba(15, 21, 37, .8); */
+  color: white;
+  z-index: -1;
+}
+
+video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+}
+
+#hero h1 {
+  font-size: 2.575rem;
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  max-width: 80%;
+  line-height: 1.2;
+  margin: auto;
+}
+
+#hero h1 span {
+  color: #FFBF1A;
+}
