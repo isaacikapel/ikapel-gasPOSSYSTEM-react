@@ -2,8 +2,8 @@
 
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { LuBox, LuUser, LuMessageSquare, LuShoppingBag, LuShoppingCart, LuLogOut, LuTruck } from 'react-icons/lu';
-import { LiaBuysellads } from 'react-icons/lia';
+import { LuBox, LuUser,  LuShoppingBag, LuShoppingCart, LuLogOut, LuTruck } from 'react-icons/lu';
+// import { LiaBuysellads, LuMessageSquare} from 'react-icons/lia';
 
 const Sidebar = () => {
   const [activeLink, setActiveLink] = useState('/');
@@ -12,22 +12,13 @@ const Sidebar = () => {
   const SIDEBAR_LINKS = [
     { id: 1, path: "/", name: "Dashboard", icon: <LuBox /> },
     { id: 2, path: "/products", name: "Products", icon: <LuShoppingBag /> },
-    { id: 3, path: "/messages", name: "Messages", icon: <LuMessageSquare /> },
-    { id: 4, path: "/shopping-cart", name: "Shopping Cart", icon: <LuShoppingCart /> },
+    // { id: 3, path: "/messages", name: "Messages", icon: <LuMessageSquare /> },
+    { id: 3, path: "/shopping-cart", name: "Shopping Cart", icon: <LuShoppingCart /> },
+    { id: 4, path: "/track-order", name: "Track Order", icon: <LuTruck /> },
     { id: 5, path: "/profile", name: "Profile", icon: <LuUser /> },
-    { id: 6, path: "/track-order", name: "Track Order", icon: <LuTruck /> },
-    { id: 7, path: "/transactions", name: "Transactions", icon: <LiaBuysellads /> },
-    { id: 8, path: "/logout", name: "LogOut", icon: <LuLogOut /> },
+    // { id: 7, path: "/transactions", name: "Transactions", icon: <LiaBuysellads /> },
+    { id: 6, path: "/logout", name: "LogOut", icon: <LuLogOut /> },
   ];
-
-  const sideMenu = document.querySelector('.sideMenu');
-
-  function openMenu(){
-    sideMenu.style.transform = 'translateX(-16rem)';
-  }
-  function closeMenu(){
-    sideMenu.style.transform = 'translateX(16rem)';
-  }
 
   return (
     <div className="text-black w-16 md:w-56 fixed left-0 top-0 z-10 h-screen border-r pt-8 px-4 bg-white">

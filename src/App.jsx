@@ -13,6 +13,7 @@ import LogOut from "./Pages/LogOut";
 import Blog from "./Components/Blog";
 import ContactUs from "./Pages/ContactUs";
 import Carousel from "./Pages/Carousel";
+import GasCylinders from './Pages/GasCylinders';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="blog" element={<Blog />}/>
         <Route path="help" element={<ContactUs />}/>
         <Route path="carousel" element={<Carousel />}/>
+        <Route path="gascylinders" element={<GasCylinders />}/>
       </Route>
     </Routes>   {/* A <Route> with a path of "/" will render <Home /> when at the root URL */}
   </BrowserRouter>

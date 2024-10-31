@@ -91,3 +91,8 @@ video{
 #hero h1 span {
   color: #FFBF1A;
 }
+
+/* .gbox:hover {
+  backdrop-filter: blur(10px);
+  background: transparent;
+} */
